@@ -1,10 +1,10 @@
-                   👨‍💻COMO EJECUTAR PROYECTO👨‍💻
+                              👨‍💻COMO EJECUTAR PROYECTO👨‍💻
 
 **Requisitos**
 
-Primero tiene que asegurarse de tener instalado lo siguiente antes de ejecutar el proyecto:
+Primero tienen que asegurarse de tener instalado lo siguiente antes de ejecutar el proyecto:
 
-Python (versión 3.x que es la mas recomendada)
+Python versión 3.x que es la mas recomendada
 
 Visual Studio Code
 
@@ -18,26 +18,19 @@ test_calcular_area.py → Contiene las pruebas unitarias usando unittest
 
 **Cómo ejecutar el código**
 
-1️⃣ Clonar el repositorio (si está en GitHub)
 
- git clone https://github.com/yoanan1996/Pruebas-Uniatarias.git
- cd tu-repositorio
-
-
-
-2️⃣ Abrir el proyecto en Visual Studio Code
+1️⃣ Abrir el proyecto en Visual Studio Code
 
  code .
 
+2️⃣ Ejecutar la función principal
 
-3️⃣ Ejecutar la función principal
-
-Para correr el código manualmente en la terminal, usa:
+ Para correr el código manualmente en la terminal, se usa:
 
  python Calcular_area.py
 
 
-4️⃣ Ejecutar las pruebas unitarias
+3️⃣ Ejecutar las pruebas unitarias
 
 Ejecuta los tests con unittest para verificar que la función funcione correctamente:
 
@@ -54,4 +47,4 @@ Si todo está correcto, deberías de ver un mensaje similar a:
 
 💪👨‍💻 Autor
 
-Tu Nombre - GitHub: yoanan1996
+ 💻GitHub: yoanan1996
