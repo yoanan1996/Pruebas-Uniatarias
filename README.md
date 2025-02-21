@@ -20,8 +20,9 @@ test_calcular_area.py → Contiene las pruebas unitarias usando unittest
 
 1️⃣ Clonar el repositorio (si está en GitHub)
 
- git clone https://github.com/tuusuario/tu-repositorio.git
+ git clone https://github.com/yoanan1996/Pruebas-Uniatarias.git
  cd tu-repositorio
+
 
 
 2️⃣ Abrir el proyecto en Visual Studio Code
