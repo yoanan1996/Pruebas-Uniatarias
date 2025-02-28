@@ -1,22 +1,25 @@
-import math
+import unittest
+from Calcular_area import calcular_area_rectangulo, calcular_area_circulo, calcular_area_triangulo
 
-def calcular_area_rectangulo(longitud, ancho):
-    if not isinstance(longitud, (int, float)) or not isinstance(ancho, (int, float)):
-        raise TypeError("Los valores deben ser números.")
-    if longitud < 0 or ancho < 0:
-        raise ValueError("Los valores deben ser positivos.")
-    return longitud * ancho
+class TestCalculoAreas(unittest.TestCase):
 
-def calcular_area_circulo(radio):
-    if not isinstance(radio, (int, float)):
-        raise TypeError("El radio debe ser un número.")
-    if radio < 0:
-        raise ValueError("El radio debe ser positivo.")
-    return math.pi * radio ** 2
+    def test_area_rectangulo(self):
+        self.assertEqual(calcular_area_rectangulo(5, 10), 50)
+        self.assertEqual(calcular_area_rectangulo(0, 10), 0)
+        with self.assertRaises(ValueError):
+            calcular_area_rectangulo(-5, 10)
 
-def calcular_area_triangulo(base, altura):
-    if not isinstance(base, (int, float)) or not isinstance(altura, (int, float)):
-        raise TypeError("Los valores deben ser números.")
-    if base < 0 or altura < 0:
-        raise ValueError("Los valores deben ser positivos.")
-    return (base * altura) / 2
+    def test_area_circulo(self):
+        self.assertAlmostEqual(calcular_area_circulo(7), 153.93804002589985)
+        self.assertEqual(calcular_area_circulo(0), 0)
+        with self.assertRaises(ValueError):
+            calcular_area_circulo(-3)
+
+    def test_area_triangulo(self):
+        self.assertEqual(calcular_area_triangulo(4, 6), 12)
+        self.assertEqual(calcular_area_triangulo(0, 10), 0)
+        with self.assertRaises(ValueError):
+            calcular_area_triangulo(-5, 10)
+
+if __name__ == '__main__':
+    unittest.main()
